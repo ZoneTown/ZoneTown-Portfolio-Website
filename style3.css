@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    color:white;
+}
+
+body{
+    background-image:url('codingimage.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+#navbar{
+    display: flex;
+    justify-content:flex-start;
+    background-color:black;
+}
+
+#navbar a{
+    text-decoration:none;
+    color:white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size:24px;
+    padding: 3.00vh 1.35vw;
+}
+
+#navbar a:hover{
+    background-color: #201548;
+    
+}
+
+img{
+    position:relative;
+    left:1350px;
+    top:-96px;
+}
+
+#head1{
+    text-align:center;
+    margin-top:0em;
+    font-family: 'Lato', sans-serif;
+}
+
+#formdiv{
+    background:black;
+    color:white;
+    border-radius: 0.3125rem;
+    max-width: 35.25rem;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5rem 2.75rem;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-size:18px;
+}
+
+#submitbutton{
+    border:none;
+    padding:5px;
+    color:white;
+    background-color:black;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#submitbutton:hover{
+    background-color:#201548;
+}

@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Changes font color for the website to white. */
+html{
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Adds the image used in the background and makes it cover the background without repeating. */
+body{
+    background-image:url('codingimage.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+/* Adds the navbar and makes it work in a flex. */
+#navbar{
+    display: flex;
+    justify-content:flex-start;
+    background-color:black;
+}
+
+/* Changes the navbar links to make them use the Noto Sans font, and display without an underline as well
+as changing the font size and padding. */
+#navbar a{
+    text-decoration:none;
+    color:white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size:24px;
+    padding: 3.00vh 1.35vw;
+}
+
+/* Makes it so when you hover the mouse over the navbar links the color changes for each individual link. */
+#navbar a:hover{
+    background-color: #201548;   
+}
+
+/* Centers the h1 and applies the Lato font family to it. */
+h1{
+    text-align:center;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Makes it so that the projects icons are given space around them and are put into a grid with 3 columns
+as well as centering it. */
+#container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap:50px;
+    justify-content:center;
+}
+
+/* Adds padding to the project icons. */
+.front-end{
+    padding:10px 10px 10px;
+    border:gray 10px solid;
+    background-color: white;
+}
+
+/* Works in conjunction with the other hovers to make the image disappear and keep the box the correct size. */
+.front-end:hover .image{
+    display: none;
+}
+
+/* Refer to the first one. */
+.front-end:hover .back-end{
+    display: block;
+}
+
+/* Refer to the first one. */
+.front-end .back-end{
+    display: none;
+}
+
+/* Creates a gray and white border around the images and adds padding around said images to create a box sized border. */
+.image{
+    padding:5px 5px 5px;
+    background-color:white; 
+}
+
+/* Changes the position and font of the h4 */
+h4{
+    text-align:center;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Changes the buttons font, and changes its awkward default color so something more fitting. */
+.buttons{
+    font-family: 'Lato', sans-serif;
+    background-color:black;
+    border:black solid 5px;
+    cursor:pointer;
+}
+
+/* Changes the links to be white and have no underline */
+.buttons a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Adjusts the position of the p and changes its font. */
+p{
+    text-align:center;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Changes the text to be black and centered, makes it fit inside the gray and white box. */
+.back-end{
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    width: 190px;
+
+}
+
+/* Further fits the text and buttons inside the gray and white box. */
+.back-end div{ 
+    padding: 0;
+}
