@@ -47,6 +47,12 @@
 
     <!-- Form -->
     <form id="Form" action="https://formsubmit.co/dale4602@gmail.com" method="POST">
+        <!-- Honeypot -->
+         <input type="text" name="_honey" style="display: none;">
+
+        <!-- Disable Captcha -->
+         <input type="hidden" name="_captcha" value="false">
+
     <div>
         <label for="name">Your Name *</label>
         <input type="text" id="name" name="name" placeholder="Full Name">
@@ -57,7 +63,7 @@
     </div>
     <div>
         <label for="text">Reason for contact *</label>
-        <textarea id="textArea" placeholder="Hi Dale, I am you contacting for..."></textarea>
+        <textarea id="textArea" placeholder="Hi Dale, I am you contacting for..." name="Reason for contacting"></textarea>
     </div>
     <button type="submit">Submit</button>
     </form>
