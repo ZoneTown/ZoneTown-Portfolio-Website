@@ -35,7 +35,7 @@ h1, h2{
 
 #navbar a:hover{
     background-color: #201548;
-    
+    transition: 0.5s
 }
 
 #logo{

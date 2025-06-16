@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!-- CSS -->
     <link rel="stylesheet" href="style3.css"/>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="validation.js" defer></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,20 +28,40 @@
         <a href="second.html">About</a>
         <a href="third.html">Contact</a>
     </div>
+
+    <!-- Logo -->
     <img src="logo.png" width="120px" height="120px" alt="logo"/>
 
-    <!-- Form -->
-    <h1 id="head1">Contact Me</h1>
-    <div id="formdiv">
-        <form>
-            <label for="fname">Name:</label><br>
-            <input type="text" id="fname" name="fname" required placeholder="John Doe"><br><br>
-            <label for="mail">Email:</label><br>
-            <input type="email" id="mail" name="mail" required placeholder="JohnDoe@gmail.com"><br><br>
-            <label for="reason">Reason for email:</label><br>
-            <input type="text" id="reason" name="reason" required placeholder="Business Inquiry"><br><br>
-            <input type="submit" id="submitbutton"></input><br>
-        </form>
+    <h1 id="head1">Get In Touch</h1>
+    <p id="error-message"></p>
+    <br>
+    <div id="left-aligned-center-container">
+        <h3 id="head2">Want to contact about commissioning a website or an employment opportunity?
+            <br><br>
+            Please send an email to dale4602@gmail.com
+        </h3>
+        <br><br><br><br><br><br>
+        <h5 id="head3">Or send a message via the form.</h5>
     </div>
+    <br>
+
+    <!-- Form -->
+    <form id="Form" action="https://formsubmit.co/dale4602@gmail.com" method="POST">
+    <div>
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" placeholder="Full Name">
+    </div>
+    <div>
+        <label for="email">Your Email *</label>
+        <input type="email" id="email" name="email" placeholder="Email">
+    </div>
+    <div>
+        <label for="text">Reason for contact *</label>
+        <textarea id="textArea" placeholder="Hi Dale, I am you contacting for..."></textarea>
+    </div>
+    <button type="submit">Submit</button>
+    </form>
+
+    
 </body>
 </html>

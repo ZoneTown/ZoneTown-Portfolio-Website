@@ -11,6 +11,7 @@ body{
     background-image:url('codingimage.jpg');
     background-repeat:no-repeat;
     background-size:cover;
+    overflow-x:hidden; /* Prevents white bar of death on the right side of screen from appearing */
 }
 
 #navbar{
@@ -29,7 +30,11 @@ body{
 
 #navbar a:hover{
     background-color: #201548;
-    
+    transition: 0.5s
+}
+
+#image-container{
+    position:relative;
 }
 
 img{
@@ -39,34 +44,98 @@ img{
 }
 
 #head1{
-    text-align:center;
-    margin-top:0em;
+    position:absolute;
+    top:100px;
+    left:650px;
     font-family: 'Lato', sans-serif;
 }
 
-#formdiv{
-    background:black;
-    color:white;
-    border-radius: 0.3125rem;
-    max-width: 35.25rem;
-    margin-top:50px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2.5rem 2.75rem;
+#error-message{
+    color:red;
+    position:absolute;
+    top:165px;
+    left:500px;
+    font-size:20px;
+    font-family: "Lato", sans-serif;
+}
+
+#head2{
+    position: absolute;
+    left:400px;
+    font-family: 'Lato', sans-serif
+}
+
+#head3{
+    position: absolute;
+    left: 475px;
+    font-family: "Lato", sans-serif;
+}
+
+#left-aligned-center-container{
+    max-width:50%;
+    text-align: center;
     position: relative;
-    font-family: 'Lato', sans-serif;
-    font-size:18px;
+    top: 20px;
+    bottom: 20px;
+    left: 165px;
 }
 
-#submitbutton{
-    border:none;
-    padding:5px;
-    color:white;
+form {
+    font-family: "Lato", sans-serif;
+    max-width: 400px;
+    margin-top: 50px;
+    margin-left: 515px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #000000; /* Container background color */
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px auto;
+    border: none;
+    border-bottom: 2px solid#201548;
+    border-radius: 4px;
+    box-sizing: border-box; /* Responsive behavior */
+    outline:none;
+    font-size:16px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    border: 4px solid #0F52BA;
+}
+
+textarea{
+    width: 100%;
+    padding:12px;
+    margin: 8px auto;
+    resize:none;
+    box-sizing:border-box;
+    font-size:18px;
+    height:100px;
+    outline:none;
+}
+
+button[type=submit]{
     background-color:black;
-    font-size:18px;
-    cursor:pointer;
+    border: none;
+    color: white;
+    text-decoration:none;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    margin:4px 2px;
+    padding:10px;
+    border-radius:100px;
+    background-color:#201548;
+    font-family: "Lato", sans-serif;
 }
 
-#submitbutton:hover{
-    background-color:#201548;
+/* Responsive layout - stack columns on small screens */
+@media screen and (max-width: 600px) {
+    /* ... CSS rules for smaller screens */
 }

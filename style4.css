@@ -24,7 +24,7 @@ body{
 }
 
 /* Changes the navbar links to make them use the Noto Sans font, and display without an underline as well
-as changing the font size and padding. */
+as changing the font size and padding.*/
 #navbar a{
     text-decoration:none;
     color:white;
@@ -33,9 +33,11 @@ as changing the font size and padding. */
     padding: 3.00vh 1.35vw;
 }
 
-/* Makes it so when you hover the mouse over the navbar links the color changes for each individual link. */
+/* Makes it so when you hover the mouse over the navbar links the color changes for each individual link. Also makes it
+use "Transition" to change the background color upon hover over a duration of 0.5 seconds. */
 #navbar a:hover{
-    background-color: #201548;   
+    background-color: #201548;
+    transition: 0.5s   
 }
 
 /* Centers the h1 and applies the Lato font family to it. */
