@@ -1,4 +1,4 @@
-const form = document.getElementById('Form')
+/*const form = document.getElementById('Form')
 const nameInput = document.getElementById('name')
 const emailInput = document.getElementById('email')
 const textInput = document.getElementById('textArea')
@@ -48,4 +48,4 @@ allInputs.forEach(input => {
             errorMessage.innerText = ''
         }
     })
-})
+})*/
