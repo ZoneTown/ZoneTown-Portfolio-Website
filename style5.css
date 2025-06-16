@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    color:white;
+}
+
+body{
+    background-image:url('codingimage.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    overflow-x:hidden; /* Prevents white bar of death on the right side of screen from appearing */
+}
+
+#navbar{
+    display: flex;
+    justify-content:flex-start;
+    background-color:black;
+}
+
+#navbar a{
+    text-decoration:none;
+    color:white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size:24px;
+    padding: 3.00vh 1.35vw;
+}
+
+#navbar a:hover{
+    background-color: #201548;
+    transition: 0.5s
+}
+
+#image-container{
+    position:relative;
+}
+
+img{
+    position:relative;
+    left:1350px;
+    top:-96px;
+}
+
+#left-aligned-center-container{
+    max-width:50%;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    bottom: 20px;
+    left: 350px;
+    font-family: 'Noto Sans', sans-serif;
+}
